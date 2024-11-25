@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
+    </style>
+      <link rel="icon" href="../images/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/newspage.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/newspage.js" defer></script>
+    <script src="../scripts/nav.js" defer></script>
+    <title>News | LegaZ</title>
+</head>
+
+<body>
+    <main class="homepage">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <a href="../homepage.html"><img class="logo" src="../images/png/logo-no-background.png" alt="logo"></a>
+            </div>
+            <!-- Navigation -->
+            <nav class="nav-container">
+                <ul>
+                    <li><a href="../homepage.html" class="nav-link">Home</a></li>
+                    <li><a href="aboutpage.html" class="nav-link">About Us</a></li>
+                    <li><a href="guidespage.html" class="nav-link">Guides</a></li>
+                    <li><a href="newspage.html" class="nav-link">News</a></li>
+                    <li><a href="communitypage.html" class="nav-link">Community</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <input type="checkbox" id="checkbox" class="wrapper__checkbox">
+            <label for="checkbox" class="wrapper__button">
+              <span class="wrapper__button-line"></span>
+              <span class="wrapper__button-line"></span>
+              <span class="wrapper__button-line"></span>
+            </label>
+            <div class="wrapper__menu">
+              <a href="../homepage.html" class="wrapper__menu-link">Home</a>
+              <a href="aboutpage.html" class="wrapper__menu-link">About Us</a>
+              <a href="guidespage.html" class="wrapper__menu-link">Guides</a>
+              <a href="newspage.html" class="wrapper__menu-link">News</a>
+              <a href="communitypage.html" class="wrapper__menu-link">Community</a>
+            </div>
+        </div>
+        <a id="button">
+            <img src="../images/png/upload.png">
+        </a>
+        <section class="head-section">
+            <div class="head-container">
+                <div class="head-content">
+                    <p class="title"><span style="color: #1cdddd">What's New:</span> Patches, Events, Hero Adjustments
+                        and Esports</p>
+                    <p class="description">
+                        Catch up on all the essential updates for Mobile Legends, including game patches, balance
+                        changes, and exclusive event highlights to enhance your gameplay experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="recent-news">
+            <div class="recent-news-container">
+                <h2 class="title animatable fadeInUp">
+                    <span style="color: #1cdddd;">Recent News and Updates</span>
+                </h2>
+                <div id="slider" class="animatable fadeInUp">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    <input type="radio" name="slider" id="slide4">
+                    <div id="slides">
+                        <div id="overflow">
+                            <div class="inner">
+                                <div class="slide slide_1">
+                                    <div class="recent-news-picture">
+                                        <a href="#n1">
+                                            <img src="../images/pictures/iesf1.jpg" class="head-slider-image"/>
+                                            <span class="transition overlay">
+                                                <h2>Malaysia claims IESF 2024 World Esports Championship MLBB title in
+                                                    grand final sweep</h2>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide slide_2">
+                                    <div class="recent-news-picture">
+                                        <a href="#n2">
+                                            <img src="../images/pictures/m6-event1.jpg" class="head-slider-image" />
+                                            <div class="transition overlay">
+                                                <h2>MLBB M6 Pass Event: Release Date, Price, Rewards, & More</h2>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide slide_3">
+                                    <div class="recent-news-picture">
+                                        <a href="#n3">
+                                            <img src="../images/pictures/aulus1.jpg" class="head-slider-image" />
+                                            <span class="transition overlay">
+                                                <h2>Mobile Legends Patch Notes 1.9.32</h2>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide slide_4">
+                                    <div class="recent-news-picture">
+                                        <a href="#n4">
+                                            <img src="../images/pictures/hanzo1.jpg" class="head-slider-image" />
+                                            <span class="transition overlay">
+                                                <h2>Upcoming Hanzo Revamp in Mobile Legends: Bang Bang</h2>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="controls" class="animatable fadeInUp">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+                    <div id="bullets" class="animatable fadeInUp">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+                </div>
+                <p class="description recent-news-description animatable fadeInUp">
+                    Stay up-to-date with the latest gameplay updates, balance changes, and esports news to enhance your
+                    Mobile Legends experience. Explore the latest features, strategies, and tips to improve your
+                    gameplay and compete with fellow players.
+                </p>
+            </div>
+        </section>
+        <section class="news-section" id="n1">
+            <div class="news-container">
+                <div class="news-content animatable bounceInLeft">
+                    <h2 class="news-title">
+                        Malaysia claims IESF 2024 World Esports Championship MLBB title in grand final sweep
+                    </h2>
+                    <p class="news-description">
+                        Malaysia's Mobile Legends: Bang Bang (MLBB) team made history by winning the 2024 IESF World
+                        Esports Championship, defeating the Philippines 2-0 in the Grand Final held in Riyadh, Saudi
+                        Arabia. The team consisted of Selangor Red Giants players Muhd Qayyum Ariffin (Yums), Muhd
+                        Haqqullah Ahmad Shahrul (Sekys), Haziq Danish Mohd Rizwan (Stormie), Ilman Zareef Zulkifli
+                        (Gojes), and JP Niners’ Gold Laner Ealtond Rayner (Lolealz).
+                    </p>
+                    <p class="news-description">
+                        The victory marked Malaysia's first win in the championship. The team performed exceptionally,
+                        securing the first match with a 17-14 "kill" advantage in 22 minutes. In the second match, they
+                        overcame initial challenges to win 9-4. Malaysia's triumph earned them a cash prize of USD
+                        70,000.
+                    </p>
+                    <p class="news-description">
+                        This victory highlights Malaysia's growing presence in the global esports arena and their
+                        potential for further success in international competitions.
+                    </p>
+                </div>
+                <div class="community-slider animatable bounceInRight">
+                    <div class="carousel" id="carousel-1-container">
+                        <div class="carousel-inner">
+                            <input class="carousel-open" type="radio" id="carousel1-1" name="carousel1"
+                                aria-hidden="true" hidden="" checked="checked">
+                            <div class="carousel-item">
+                                <img src="../images/pictures/iesf1.jpg">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel1-2" name="carousel1"
+                                aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="../images/pictures/iesf2.jpg">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel1-3" name="carousel1"
+                                aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="../images/pictures/iesf3.jpeg">
+                            </div>
+                            <!-- Control buttons -->
+                            <label for="carousel1-3" class="carousel-control prev control-1">‹</label>
+                            <label for="carousel1-2" class="carousel-control next control-1">›</label>
+                            <label for="carousel1-1" class="carousel-control prev control-2">‹</label>
+                            <label for="carousel1-3" class="carousel-control next control-2">›</label>
+                            <label for="carousel1-2" class="carousel-control prev control-3">‹</label>
+                            <label for="carousel1-1" class="carousel-control next control-3">›</label>
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li>
+                                    <label for="carousel1-1" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel1-2" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel1-3" class="carousel-bullet">•</label>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news-section" id="n2">
+            <div class="news-container">
+                <div class="community-slider animatable bounceInLeft">
+                    <div class="carousel" id="carousel-2-container">
+                        <div class="carousel-inner">
+                            <input class="carousel-open" type="radio" id="carousel2-1" name="carousel2"
+                                aria-hidden="true" hidden="" checked="checked">
+                            <div class="carousel-item">
+                                <img src="../images/pictures/m6-event1.jpg">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel2-2" name="carousel2"
+                                aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="../images/pictures/m6-event2.jpg">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel2-3" name="carousel2"
+                                aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="../images/pictures/m6-event3.jpg">
+                            </div>
+                            <!-- Control buttons -->
+                            <label for="carousel2-3" class="carousel-control prev control-1">‹</label>
+                            <label for="carousel2-2" class="carousel-control next control-1">›</label>
+                            <label for="carousel2-1" class="carousel-control prev control-2">‹</label>
+                            <label for="carousel2-3" class="carousel-control next control-2">›</label>
+                            <label for="carousel2-2" class="carousel-control prev control-3">‹</label>
+                            <label for="carousel2-1" class="carousel-control next control-3">›</label>
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li>
+                                    <label for="carousel2-1" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel2-2" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel2-3" class="carousel-bullet">•</label>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-content animatable bounceInRight">
+                    <h2 class="news-title">
+                        MLBB M6 Pass Event: Release Date, Price, Rewards, & More
+                    </h2>
+                    <p class="news-description">
+                        The Mobile Legends: Bang Bang (MLBB) M6 Pass Event begins on November 18, 2024, coinciding with
+                        the buildup to the M6 World Championship. Players could pre-register for the pass from November
+                        1 to 17 to earn 1,000 pass EXP, equivalent to one level.
+                    </p>
+                    <p class="news-description">
+                        M6 Pass Details:
+                    </p>
+                    <p class="news-description">
+                        Price and Tiers:<br>
+                        Regular Pass: 399 diamonds<br>
+                        Pass Plus: 699 diamonds Each tier offers various exclusive rewards, with the Pass Plus providing
+                        additional perks.
+                    </p>
+                    <p class="news-description">
+                        Rewards:<br>
+                        Exclusive Skins: This year, the M6 features two Claude skins: Challenger’s Spark and the Prime
+                        Cosmic Blaze. The latter unlocks at level 75​.<br>
+                        Claude Figurine: Achievable at level 150.<br>
+                        Other rewards include battle points, emblems, avatar borders, and custom recall/kill animations.
+                    </p>
+                    <p class="news-description">
+                        Gameplay Features:<br>
+                        Daily missions and challenges help players progress through the pass, earning levels and
+                        unlocking exclusive content.
+                    </p>
+                    <p class="news-description">
+                        This event ties into the M6 World Championship and brings unique experiences for casual and
+                        competitive players alike. For more details, check the official Mobile Legends news outlets or
+                        related event pages!This event ties into the M6 World Championship and brings unique experiences
+                        for casual and competitive players alike. For more details, check the official Mobile Legends
+                        news outlets or related event pages!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="news-section" id="n3">
+            <div class="news-container">
+                <div class="news-content animatable bounceInLeft">
+                    <h2 class="news-title">
+                        Mobile Legends Patch Notes 1.9.32
+                    </h2>
+                    <p class="news-description">
+                        The Mobile Legends Patch 1.9.32 introduces a range of hero adjustments, equipment updates, and
+                        enhancements for competitive play. Here’s a summary:
+                    </p>
+                    <p class="news-description">
+                        Hero Adjustments
+                    </p>
+                    <p class="news-description">
+                        Aulus (Buffed):<br>
+                        Passive stacks reduced to 3, but each now grants 15% attack speed.<br>
+                        Skill 1 has increased cooldown and a forward damage reduction.<br>
+                        Ultimate gets a bonus physical damage effect with full stacks.
+                    </p>
+                    <p class="news-description">
+                        Zilong (Nerfed):<br>
+                        Extra damage on low-HP targets decreased.<br>
+                        Attack speed boost from his ultimate reduced significantly.
+                    </p>
+                    <p class="news-description">
+                        Sun (Adjusted):<br>
+                        Skill 2 now includes a slow effect, stackable up to three times.<br>
+                        Ultimate mechanics reverted to the official server standard.
+                    </p>
+                    <p class="news-description">
+                        Badang (Adjusted):<br>
+                        Skill 1’s timing now scales with attack speed.<br>
+                        Increased control duration on his ultimate, but with a longer cooldown.
+                    </p>
+                    <p class="news-description">
+                        Equipment Changes
+                    </p>
+                    <p class="news-description">
+                        Haas’ Claws: Lifesteal reduced but physical attack increased, balancing damage and sustain.<br>
+                        Demon Hunter Sword: Gains additional lifesteal for better sustain in fights.
+                    </p>
+                </div>
+                <div class="community-slider animatable bounceInRight">
+                    <div class="carousel" id="carousel-3-container">
+                        <div class="carousel-inner">
+                            <input class="carousel-open" type="radio" id="carousel3-1" name="carousel3"
+                                aria-hidden="true" hidden="" checked="checked">
+                            <div class="carousel-item">
+                                <img src="../images/pictures/aulus1.jpg">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel3-2" name="carousel3"
+                                aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="../images/pictures/zilong.jpg">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel3-3" name="carousel3"
+                                aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="../images/pictures/badang.jpg">
+                            </div>
+                            <!-- Control buttons -->
+                            <label for="carousel3-3" class="carousel-control prev control-1">‹</label>
+                            <label for="carousel3-2" class="carousel-control next control-1">›</label>
+                            <label for="carousel3-1" class="carousel-control prev control-2">‹</label>
+                            <label for="carousel3-3" class="carousel-control next control-2">›</label>
+                            <label for="carousel3-2" class="carousel-control prev control-3">‹</label>
+                            <label for="carousel3-1" class="carousel-control next control-3">›</label>
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li>
+                                    <label for="carousel3-1" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel3-2" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel3-3" class="carousel-bullet">•</label>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news-section" id="n4">
+            <div class="news-container">
+                <div class="community-slider animatable bounceInLeft">
+                    <div class="carousel" id="carousel-4-container">
+                        <div class="carousel-inner">
+                            <input class="carousel-open" type="radio" id="carousel4-1" name="carousel4"
+                                aria-hidden="true" hidden="" checked="checked">
+                            <div class="carousel-item">
+                                <img src="../images/pictures/hanzo1.jpg">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel4-2" name="carousel4"
+                                aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="../images/pictures/hanzo2.jpg">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel4-3" name="carousel4"
+                                aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="../images/pictures/hanzo3.jpg">
+                            </div>
+                            <!-- Control buttons -->
+                            <label for="carousel4-3" class="carousel-control prev control-1">‹</label>
+                            <label for="carousel4-2" class="carousel-control next control-1">›</label>
+                            <label for="carousel4-1" class="carousel-control prev control-2">‹</label>
+                            <label for="carousel4-3" class="carousel-control next control-2">›</label>
+                            <label for="carousel4-2" class="carousel-control prev control-3">‹</label>
+                            <label for="carousel4-1" class="carousel-control next control-3">›</label>
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li>
+                                    <label for="carousel4-1" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel4-2" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel4-3" class="carousel-bullet">•</label>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-content animatable bounceInRight">
+                    <h2 class="news-title">
+                        Upcoming Hanzo Revamp in Mobile Legends: Bang Bang
+                    </h2>
+                    <p class="news-description">
+                        The upcoming Hanzo revamp in Mobile Legends: Bang Bang focuses on significant changes to his
+                        skill set, providing him with better utility and improved gameplay dynamics. This revamp is part
+                        of the ongoing Project NEXT updates, which aim to enhance heroes' performance and align them
+                        with current game mechanics.
+                    </p>
+                    <p class="news-description">
+                        Key Changes in Hanzo's Revamp:
+                    </p>
+                    <p class="news-description">
+                        Skill Adjustments: Hanzo’s abilities are being reworked to improve his damage potential and
+                        teamfight utility while balancing his reliance on skill shots. His ultimate, which lets him
+                        separate his soul, will reportedly have smoother controls and more strategic uses.
+                    </p>
+                    <p class="news-description">
+                        Animation Improvements: Visual effects and skill animations are being upgraded to make them more
+                        immersive and impactful.
+                    </p>
+                    <p class="news-description">
+                        Meta Viability: These changes aim to make Hanzo a more viable pick across different ranks,
+                        addressing his previous weaknesses in the current meta.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <h3>LegaZ | MLBB Hub</h3>
+                <p>Your Go-To Destination for Mobile Legends News, Guides, and Community.</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-discord">
+                                <img src="../images/png/discord-logo.png" alt="Discord">
+                            </i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube">
+                                <img src="../images/png/youtube-logo.png" alt="Youtube">
+                            </i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2024 LegaZ.</p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

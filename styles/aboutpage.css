@@ -1,0 +1,445 @@
+.head-section {
+    background-color: #040c1c;
+    min-height: 40vh;
+    width: 100%;
+    background-image: url(../images/pictures/playing-mlbb.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    padding-top: 37px;
+}
+
+.head-container {
+    display: grid;
+    justify-self: left;
+    height: 90%;
+    width: 50%;
+    margin: 0 2rem;
+}
+
+.head-content {
+    display: inline-block;
+    align-self: center;
+}
+
+.title {
+    font-family: "Oxanium", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.description {
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.mission, .story {
+    background-color: #042a3d;
+    min-height: 60vh;
+    width: 100%;
+}
+
+.mission-container, .story-container {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    height: 85%;
+    width: 95%;
+    padding: 0 2rem;
+    padding-top: 3rem;
+    column-gap: 2rem;
+}
+
+.know-button {
+    align-content: center;
+    background-color: #1cdddd;
+    border: none;
+    color: #040c1c;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;    
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: "Oxanium", sans-serif;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.mission-container p {
+    margin: 2rem 0;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.offer {
+    background-color: #084658;
+    height: 100vh;
+    width: 100%;
+}
+
+.offer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    height: 80%;
+    width: 85%;
+    padding: 1rem 2rem;
+    column-gap: 2rem;
+    row-gap: 0;
+}
+
+.section-title {
+    grid-column: span 3;
+    text-align: center;
+    margin: 0;
+}
+
+.offer-title {
+    font-size: 1.5rem;
+    font-family: "Oxanium", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    margin: 1rem 0;
+}
+
+.offer-description {
+    font-size: 1rem;
+    font-family: "Jura", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.story {
+    background-color: #040c1c;
+}
+
+.about-image {
+    border-radius: 5px;
+    height: auto;
+}
+
+.who {
+    min-height: 100vh;
+    background-color: #042a3d;
+    width: 100%;
+}   
+
+.who-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 10px 5fr;
+    gap: 10px;
+    height: 85%;
+    width: 95%;
+    padding: 3rem 2rem;
+    column-gap: 10rem;
+    row-gap: 5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.who-title {
+    grid-column: span 2;
+    text-align: center;
+    margin: 0;
+}
+
+.who-card {
+    display: grid;
+    justify-self: start;
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background-color: #040c1c;
+    border-radius: 20px;
+    box-shadow: 0 35px 50px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    margin-top: 3rem;   
+}
+
+.who-card:nth-child(odd){
+    display: grid;
+    justify-self: end;
+}
+
+.who-card:hover {
+    height: 450px;
+}
+
+.who-image {
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #040c1c;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.who-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.who-card:hover .who-image {
+    width: 220px;
+    height: 220px;
+}
+
+.who-card .who-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.who-card .who-content .who-details {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(270px);
+}
+
+.who-card:hover .who-content .who-details {
+    transform: translateY(40px);
+}
+
+.who-card .who-content .who-name {
+    color: #1cdddd;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    font-family: "Oxanium", sans-serif;
+}
+
+.who-card .who-content .who-name span {
+    font-size: 0.75rem;
+    font-weight: normal;
+    opacity: 0.5;
+}
+
+.full-span img {
+    width: 16px;
+    height: 16px;
+    margin: 0 2px;
+}
+
+.soc-med {
+    display: flex;
+    justify-content: start;
+}
+
+.who-details {
+    row-gap: 10px;
+}
+
+.who-card .who-content .who-details .who-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.who-card .who-content .who-details .who-data h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    color: #ffffff;
+    font-family: "Oxanium", sans-serif;
+}
+
+.who-card .who-content .who-details .who-data h3 span {
+    font-size: 0.75rem;
+    font-weight: normal;
+    opacity: 0.5;
+}
+
+.who-data .full-span {
+    grid-column: span 3; /* Makes the last h3 span across all 3 columns */
+    text-align: center;
+}
+
+.full-span {
+    grid-column: span 3; /* Span all columns */
+    width: 100%; /* Ensure it takes up the full width */
+    text-align: center; /* Optionally center the content */
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    grid-column: span 2;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-label::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 19px;
+    height: 19px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #1cdddd;
+}
+
+.toggle-checkbox:checked + .toggle-label::after {
+    transform: translateX(25px);
+}
+
+.toggle-text {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Oxanium", sans-serif;
+}
+
+/* Smooth transition for text and data */
+.who-card .who-content .who-details h2,
+.who-card .who-content .who-details .who-data {
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+/* Hidden state (for smooth transition during content change) */
+.who-card .who-content .who-details.hiding h2,
+.who-card .who-content .who-details.hiding .who-data {
+    opacity: 0; /* Fades out the content */
+    transform: translateY(10px); /* Slight downward shift */
+}
+
+.who-image img {
+    transition: opacity 0.5s ease;
+}
+
+.who-image img.image-hiding {
+    opacity: 0;
+}
+
+.who-image img:not(.image-hiding) {
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .mission-container, .story-container {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    .offer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .section-title {
+        grid-column: span 2;
+        text-align: center;
+        margin: 0;
+    }
+    
+
+    .who-container {
+        column-gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 10px 1fr 1fr;
+    }
+
+    .toggle-switch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+        grid-column: span 1;
+    }
+
+    .who-title {
+        grid-column: span 1;
+        text-align: center;
+        margin: 0;
+    }
+
+    .who-card {
+        display: grid;
+        justify-self: center;
+    }
+
+    .who-card:nth-child(odd) {
+        display: grid;
+        justify-self: center;
+    }
+}
+
+
+/* Tablet: width between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mission-container, .story-container {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    .who-container {
+        column-gap: 2rem;
+    }
+}

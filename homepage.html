@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
+  </style>
+  <link rel="icon" href="images/favicon_io/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/homepage.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/nav.js" defer></script>
+  <title>LegaZ | MLBB Hub</title>
+</head>
+
+<body>
+  <main class="homepage">
+    
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-container">
+        <a href="homepage.html"><img class="logo" src="images/png/logo-no-background.png" alt="logo"></a>
+      </div>
+      <!-- Navigation -->
+      <nav class="nav-container">
+        <ul>
+          <li><a href="homepage.html" class="nav-link">Home</a></li>
+          <li><a href="pages/aboutpage.html" class="nav-link">About Us</a></li>
+          <li><a href="pages/guidespage.html" class="nav-link">Guides</a></li>
+          <li><a href="pages/newspage.html" class="nav-link">News</a></li>
+          <li><a href="pages/communitypage.html" class="nav-link">Community</a></li>
+        </ul>
+      </nav>  
+    </header>
+    <div class="wrapper">
+      <input type="checkbox" id="checkbox" class="wrapper__checkbox">
+      <label for="checkbox" class="wrapper__button">
+        <span class="wrapper__button-line"></span>
+        <span class="wrapper__button-line"></span>
+        <span class="wrapper__button-line"></span>
+      </label>
+      <div class="wrapper__menu">
+        <a href="homepage.html" class="wrapper__menu-link">Home</a>
+        <a href="pages/aboutpage.html" class="wrapper__menu-link">About Us</a>
+        <a href="pages/guidespage.html" class="wrapper__menu-link">Guides</a>
+        <a href="pages/newspage.html" class="wrapper__menu-link">News</a>
+        <a href="pages/communitypage.html" class="wrapper__menu-link">Community</a>
+      </div>
+    </div>
+    <a id="button">
+      <img src="images/png/upload.png">
+    </a>
+    <!-- Header Section -->
+    <section class="header-section">
+      <div class="header-image">
+        <img src="images/pictures/selena.png" alt="Selena MLBB">
+      </div>
+      <div class="header-text">
+        <h1 class="header-title">
+          <span style="color: #1cdddd;">Unleash the Champion Within:</span>
+          <br />
+          Your Ultimate Mobile Legends Resource Hub
+        </h1>
+        <p class="header-subtitle">
+          From Expert Guides and Latest Updates to Live Events and a Thriving Community – Everything You Need to
+          Dominate Mobile Legends
+        </p>
+        <div class="header-buttons">
+          <a href="#explore" class="explore-button button">Explore</a>
+          <a href="communitypage.html" class="join-community-button button">Join Community</a>
+        </div>
+      </div>
+    </section>
+    <!-- Overview -->
+    <section class="game-info" id="explore">
+      <div class="game-info-content">
+        <div class="game-description animatable bounceInLeft">
+          <h2 class="game-title">Mobile Legends: <span style="color: #fff;">A Battle of Strategy and Skill</span></h2>
+          <p class="game-text">
+            Mobile Legends: Bang Bang is a fast-paced 5v5 multiplayer online battle arena (MOBA) game developed by
+            Moonton. Released in 2016, the game quickly became one of the most popular mobile esports titles globally,
+            particularly in Southeast Asia. Players choose from a roster of diverse heroes, each with unique abilities,
+            and work with their team to destroy the enemy's base while defending their own.
+            <br /><br />
+            The game emphasizes teamwork, strategy, and skillful play, offering various modes, including Ranked,
+            Classic, and Brawl. Regular updates introduce new heroes, skins, and events, keeping the experience fresh
+            and engaging for both casual and competitive players.
+          </p>
+        </div>
+        <div class="video-gameplay-container animatable bounceInRight custom-video" id="videoElement" controls="false">
+          <video class="video-gameplay" controls autoplay muted loop>
+            <source src="videos/MLBB 2023 Store Video - EN.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+    <!-- Statistics -->
+    <section class="stats-section">
+      <div class="stats-container animatable moveUp">
+        <div class="stats-content">
+          <svg class="stats-image" width="70" height="70" fill="none" stroke="#1cdddd" stroke-width="1.5"
+            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <path d='M4 16.004V17a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1M12 4.5v11m3.5-3.5L12 15.5 8.5 12' />
+          </svg>
+          <p class="stats-text">
+            Over 1 Billion Downloads
+          </p>
+        </div>
+        <div class="stats-content">
+          <svg class="stats-image" width="70" height="70" fill="none" stroke="#1cdddd" stroke-width="1.5"
+            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d='M21 19.75c0-2.09-1.67-5.068-4-5.727m-2 5.727c0-2.651-2.686-6-6-6s-6 3.349-6 6m9-12.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m3 3a3 3 0 1 0 0-6' />
+          </svg>
+          <p class="stats-text">
+            100 Million Monthly Active Users
+          </p>
+        </div>
+        <div class="stats-content">
+          <svg class="stats-image" width="70" height="70" fill="none" stroke="#1cdddd" stroke-width="1.5"
+            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d='M12 21a9 9 0 1 0 0-18m0 18a9 9 0 1 1 0-18m0 18c2.761 0 3.941-5.163 3.941-9 0-3.837-1.18-9-3.941-9m0 18c-2.761 0-3.941-5.163-3.941-9 0-3.837 1.18-9 3.941-9M3.5 9h17m-17 6h17' />
+          </svg>
+          <p class="stats-text">
+            Available in 135 Countries and 23 Languages
+          </p>
+        </div>
+        <div class="stats-content">
+          <svg class="stats-image" width="70" height="70" fill="none" stroke="#1cdddd" stroke-width="1.5"
+            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d='M21 12h-2.962c-.21 0-.316 0-.405.042a.51.51 0 0 0-.201.173c-.061.088-.092.205-.155.44l-1.817 6.846c-.233.875-.349 1.313-.524 1.426a.435.435 0 0 1-.485-.002c-.175-.115-.288-.554-.514-1.43l-3.873-14.99c-.227-.876-.34-1.315-.515-1.43a.435.435 0 0 0-.485-.002c-.175.113-.291.55-.524 1.426l-1.817 6.845c-.063.236-.094.353-.154.44a.51.51 0 0 1-.202.174C6.278 12 6.173 12 5.962 12H3' />
+          </svg>
+          <p class="stats-text">
+            Esports had 3.2 Million Peak Viewers
+          </p>
+        </div>
+        <div class="stats-content stats-content-span2">
+          <svg class="stats-image" width="70" height="70" fill="none" stroke="#1cdddd" stroke-width="1.5"
+            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d='M17 5h-5m0 0H9.5a3.5 3.5 0 1 0 0 7H12m0-7V3m0 2v7m0 0h2.5a3.5 3.5 0 1 1 0 7H12m0-7v7m0 0H6m6 0v2' />
+          </svg>
+          <p class="stats-text">
+            Monthly Revenues Over $30 Million
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Offers -->
+    <section class="expertise-section">
+      <div class="expertise-container animatable fadeInUp">
+        <div class="expertise-content">
+          <h2 class="expertise-title">
+            <span style="color: #1cdddd;">Unleashing Our Expertise:</span> Guides, News, and a Passionate Mobile Legends
+            Community
+          </h2>
+          <p class="expertise-subtitle">
+            Empowering Mobile Legends players with expert guides, timely updates, and a vibrant community for shared
+            growth and engagement.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Guides -->
+    <section class="guides-section">
+      <div class="guides-container">
+        <h2 class="guides-heading animatable fadeInUp">
+          <span style="color: #1cdddd;">Unlock Strategies:</span> Expert Guides<br> for Every Player
+        </h2>
+        <div class="guides-list">
+          <a href="beginnerguide.html" target="_blank">
+          <div class="guide-card animatable fadeInUp">
+            <img src="images/pictures/beginner-guide.jpg" alt="Beginner Guide" class="guide-image" />
+            <div class="guide-content">
+              <h3 class="guide-title">Beginner<br>Guide</h3>
+              <p class="guide-description">
+                An introduction to the core mechanics of Mobile Legends, covering essential gameplay elements and
+                fundamental strategies for new players.
+              </p>
+            </div>
+          </div>
+          </a>
+          <a href="intermediateguide.html" target="_blank">
+          <div class="guide-card animatable fadeInUp">
+            <img src="images/pictures/intermediate-guide.jpg" alt="Intermediate Guide" class="guide-image" />
+            <div class="guide-content">
+              <h3 class="guide-title">Intermediate Guide</h3>
+              <p class="guide-description">
+                Designed for newcomers, this guide offers practical tips and tricks to help you understand hero roles,
+                map awareness, and effective team play as you start your journey.
+              </p>
+            </div>
+          </div>
+          </a>
+          <a href="advancedguide.html" target="_blank">
+          <div class="guide-card animatable fadeInUp">
+            <img src="images/pictures/advanced-guide.jpg" alt="Advanced Guide" class="guide-image" />
+            <div class="guide-content">
+              <h3 class="guide-title">Advanced Guide</h3>
+              <p class="guide-description">
+                Elevate your gameplay with in-depth strategies and expert insights tailored for seasoned players,
+                focusing on advanced tactics, hero synergies, and competitive play techniques.
+              </p>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- News -->
+    <section class="news-section">
+      <div class="news-content">
+        <img src="images/pictures/miya.png" alt="Mobile Legends News" class="news-image animatable bounceInLeft" />
+        <div class="news-text animatable bounceInRight">
+          <h2 class="news-title">Get the Latest on Updates and Events</h2>
+          <p class="news-description">
+            Stay informed with the latest updates, patch notes, and events in Mobile Legends, including important game
+            changes, new hero releases, and community happenings. Keep up with the exciting developments in the esports
+            scene, ensuring you never miss a crucial moment in the game or competitive tournaments.
+          </p>
+          <a href="newspage.html" class="read-news-button button">Read More...</a>
+        </div>
+      </div>
+    </section>
+    <!-- Community -->
+    <section class="community-section">
+      <div class="community-container">
+        <div class="community-content">
+          <h2 class="community-title animatable moveUp">
+            <span style="color: #1cdddd;">Unite with Fellow Legends:</span><br> Join a Community of<br>Passionate
+            Players
+          </h2>
+          <img src="images/pictures/phones.png" alt="Mobile Legends Community" class="community-image animatable bounceIn" />
+          <p class="community-description animatable fadeIn">
+            Become a part of our passionate Mobile Legends community! Connect with players on Discord to discuss
+            strategies, share gameplay experiences, and participate in events. Don't forget to check out our YouTube
+            channel for gameplay highlights, tutorials, and more, as we celebrate our love for the game together.
+          </p>
+          <div class="community-buttons-container animatable fadeInUp">
+            <a href="https://discord.gg/wkpPUHyJ" target="_blank" class="join-discord-button button">Join us on Discord</a>
+            <a href="http://www.youtube.com/@LegaZMLBBHub" target="_blank" class="watch-youtube-button button">Watch on YouTube</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <h3>LegaZ | MLBB Hub</h3>
+      <p>Your Go-To Destination for Mobile Legends News, Guides, and Community.</p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-discord">
+              <img src="images/png/discord-logo.png" alt="Discord">
+            </i></a></li>
+        <li><a href="#"><i class="fa fa-youtube">
+              <img src="images/png/youtube-logo.png" alt="Youtube">
+            </i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2024 LegaZ.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

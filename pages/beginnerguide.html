@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
+    </style>
+      <link rel="icon" href="../images/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/guides.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/nav.js" defer></script>
+    <title>Beginner Guide | LegaZ</title>
+</head>
+<body>
+    <main class="homepage">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <a href="../homepage.html"><img class="logo" src="../images/png/logo-no-background.png" alt="logo"></a>
+            </div>
+            <!-- Navigation -->
+            <nav class="nav-container">
+                <ul>
+                    <li><a href="../homepage.html" class="nav-link">Home</a></li>
+                    <li><a href="aboutpage.html" class="nav-link">About Us</a></li>
+                    <li><a href="guidespage.html" class="nav-link">Guides</a></li>
+                    <li><a href="newspage.html" class="nav-link">News</a></li>
+                    <li><a href="communitypage.html" class="nav-link">Community</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <input type="checkbox" id="checkbox" class="wrapper__checkbox">
+            <label for="checkbox" class="wrapper__button">
+              <span class="wrapper__button-line"></span>
+              <span class="wrapper__button-line"></span>
+              <span class="wrapper__button-line"></span>
+            </label>
+            <div class="wrapper__menu">
+              <a href="../homepage.html" class="wrapper__menu-link">Home</a>
+              <a href="aboutpage.html" class="wrapper__menu-link">About Us</a>
+              <a href="guidespage.html" class="wrapper__menu-link">Guides</a>
+              <a href="newspage.html" class="wrapper__menu-link">News</a>
+              <a href="communitypage.html" class="wrapper__menu-link">Community</a>
+            </div>
+        </div>
+        <a id="button">
+            <img src="../images/png/upload.png">
+        </a>
+        <section class="head-section">
+            <div class="head-container">
+                <div class="head-content">
+                    <h1 class="title animatable fadeInUp">Beginner Guide</h1>
+                    <p class="subtitle animatable fadeInUp">
+                        New to Mobile Legends? Start here with our basic guide! Learn the essential gameplay mechanics,
+                        hero roles, and key strategies to help you get started and build a strong foundation for future
+                        success.
+                    </p>
+                    <p class="start-with-text animatable bounceIn">
+                        Start With:
+                    </p>
+                    <div class="slider animatable fadeInUp" style="
+                    --width: 100px;
+                    --height: 50px;
+                    --quantity: 5;
+                ">
+                    <div class="list">
+                        <div class="item" style="--position: 1"><a href="#g1"><h5>Hero Roles</h5></a></div>
+                        <div class="item" style="--position: 2"><a href="#g2"><h5>Map</h5></a></div>
+                        <div class="item" style="--position: 3"><a href="#g3"><h5>Mechanics & Settings</h5></a></div>
+                        <div class="item" style="--position: 4"><a href="#g4"><h5>Communication</h5></a></div>
+                        <div class="item" style="--position: 5"><a href="#g5"><h5>Builds & Skills</h5></a></div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="guide-section" id="g1">
+            <div class="guide-container">
+                <div class="guide-content animatable bounceInLeft">
+                    <h2 class="guide-title">
+                        1. Understanding Hero Roles
+                    </h2>
+                    <p class="guide-description">
+                        Objective: Familiarize yourself with hero roles to choose your playstyle.
+                    </p>
+                    <p class="guide-description">
+                        Tank:<br>
+                        Responsibilities: Absorb damage, initiate fights, and shield squishy allies.<br>
+                        Example Heroes: Tigreal, Khufra.<br>
+                        Tip: Stay in the front line, and don't wander away from your team.
+                    </p>
+                    <p class="guide-description">
+                        Fighter:<br>
+                        Responsibilities: Balanced survivability and damage. Great for sustained fights.<br>
+                        Example Heroes: Aldous, Thamuz.<br>
+                        Tip: Focus on dueling in the top lane or helping team fights when necessary.
+                    </p>
+                    <p class="guide-description">
+                        Marksman:<br>
+                        Responsibilities: Primary damage dealers with high scaling potential.<br>
+                        Example Heroes: Layla, Clint.<br>
+                        Tip: Always stay at a safe distance behind your team. Avoid fights early unless well-protected.
+                    </p>
+                    <p class="guide-description">
+                        Mage:<br>
+                        Responsibilities: Burst magic damage and crowd control.<br>
+                        Example Heroes: Eudora, Gord.<br>
+                        Tip: Use your skills to poke enemies and control the mid-lane.
+                    </p>
+                    <p class="guide-description">
+                        Assassin:<br>
+                        Responsibilities: High burst damage, ideal for taking down squishy targets.<br>
+                        Example Heroes: Fanny, Karina.<br>
+                        Tip: Look for isolated enemies. Avoid direct fights with tanks early.
+                    </p>
+                    <p class="guide-description">
+                        Support:<br>
+                        Responsibilities: Enhance allies' survivability or utility.<br>
+                        Example Heroes: Rafaela, Angela.<br>
+                        Tip: Stick with your carry (Marksman/Mage) and keep them alive.
+                    </p>
+                </div>
+                <div class="guide-slider animatable bounceInRight">
+                    <img src="../images/pictures/hero-roles.jpg" alt="Beginner Guide" class="guide-image" />
+                </div>
+            </div>
+        </section>
+        <section class="guide-section" id="g2">
+            <div class="guide-container">
+
+                <div class="guide-slider animatable bounceInLeft">
+                    <img src="../images/pictures/map.jpg" alt="Beginner Guide" class="guide-image" />
+                </div>
+                <div class="guide-content animatable bounceInRight">
+                    <h2 class="guide-title">
+                        2. Familiarize Yourself with the Map
+                    </h2>
+                    <p class="guide-description">
+                        Objective: Learn the layout and key locations.
+                    </p>
+                    <p class="guide-description">
+                        Lanes Overview:<br>
+                        Top Lane: Solo lane for Fighters or Tanks. Prioritize clearing minion waves and assisting the team.<br>
+                        Mid Lane: Fast rotation lane for Mages. Focus on controlling objectives like Turtle.<br>
+                        Bottom Lane: Duo lane for Marksman and Support. Safeguard the carry to farm efficiently.
+                    </p>
+                    <p class="guide-description">
+                        Jungle Areas:<br>
+                        Buff monsters:<br>
+                        Red Buff: Extra damage (Marksman/Assassin-focused).<br>
+                        Blue Buff: Mana/energy regen (Mage/Assassin-focused).<br>
+                        Other monsters: Provide gold, exp, or healing (crabs, lithowanderers).
+                    </p>
+                    <p class="guide-description">
+                        Key Zones:<br>
+                        Bushes: Use these to hide and ambush enemies.<br>
+                        Turtle and Lord Pits: Control vision around these areas for objectives.
+                    </p>
+                    <p class="guide-description">
+                        Tip: Regularly check the minimap for ally and enemy movements.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="guide-section" id="g3">
+            <div class="guide-container">
+                <div class="guide-content animatable bounceInLeft">
+                    <h2 class="guide-title">
+                        3. Core Mechanics and Settings
+                    </h2>
+                    <p class="guide-description">
+                        Objective: Understand essential controls and configurations.
+                    </p>
+                    <p class="guide-description">
+                        Enable Targeting Priority:<br>
+                        Focus on low-health heroes or turrets for efficient takedowns.
+                    </p>
+                    <p class="guide-description">
+                        Adjust Camera Sensitivity:<br>
+                        Find a sensitivity level for precise map panning.
+                    </p>
+                    <p class="guide-description">
+                        Learn to last-hit minions:<br>
+                        Position closer to minions for guaranteed gold when attacking.
+                    </p>
+                    <p class="guide-description">
+                        Practice manual aiming:<br>
+                        Avoid relying on auto-aim to hit mobile targets or skill shots.
+                    </p>
+                </div>
+                <div class="guide-slider animatable bounceInRight">
+                    <img src="../images/pictures/mechanics.jpg" alt="Beginner Guide" class="guide-image" />
+                </div>
+            </div>
+        </section>
+        <section class="guide-section" id="g4">
+            <div class="guide-container">
+
+                <div class="guide-slider animatable bounceInLeft">
+                    <img src="../images/pictures/comms.jpg" alt="Beginner Guide" class="guide-image" />
+                </div>
+                <div class="guide-content animatable bounceInRight">
+                    <h2 class="guide-title">
+                        4. Effective Communication
+                    </h2>
+                    <p class="guide-description">
+                        Objective: Learn to communicate effectively with teammates.
+                    </p>
+                    <p class="guide-description">
+                        Quick Chat Commands:<br>
+                        Use “Enemy Missing” to warn allies.<br>
+                        Call out “Attack” or “Retreat” to guide team engagements.
+                    </p>
+                    <p class="guide-description">
+                        Pings:<br>
+                        Use map pings to highlight objectives or enemy positions.
+                    </p>
+                    <p class="guide-description">
+                        Tip: Avoid spamming chat or pings to reduce confusion and maintain team morale.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="guide-section" id="g5">
+            <div class="guide-container">
+                <div class="guide-content animatable bounceInLeft">
+                    <h2 class="guide-title">
+                        5. Build and Skill Progression Basics
+                    </h2>
+                    <p class="guide-description">
+                        Objective: Understand how to level up skills and purchase items.
+                    </p>
+                    <p class="guide-description">
+                        Skill Prioritization:<br>
+                        Always max out your most impactful skill first (e.g., Eudora’s Lightning Bolt for burst).<br>
+                        Upgrade your ultimate whenever possible.
+                    </p>
+                    <p class="guide-description">
+                        Item Builds:<br>
+                        Start with boots for mobility.<br>
+                        Follow the recommended build initially but adjust based on enemy composition.<br>
+                        Example: Build Anti-Mage Cloak early if enemies have strong Mages.
+                    </p>
+                    <p class="guide-description">
+                        Tip: Watch advanced players to learn flexible item-building strategies.
+                    </p>
+                </div>
+                <div class="guide-slider animatable bounceInRight">
+                    <img src="../images/pictures/build.jpg" alt="Beginner Guide" class="guide-image" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+          <h3>LegaZ | MLBB Hub</h3>
+          <p>Your Go-To Destination for Mobile Legends News, Guides, and Community.</p>
+          <ul class="socials">
+            <li><a href="#"><i class="fa fa-discord">
+                  <img src="../images/png/discord-logo.png" alt="Discord">
+                </i></a></li>
+            <li><a href="#"><i class="fa fa-youtube">
+                  <img src="../images/png/youtube-logo.png" alt="Youtube">
+                </i></a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>copyright &copy;2024 LegaZ.</p>
+        </div>
+      </footer>
+</body>
+</html>

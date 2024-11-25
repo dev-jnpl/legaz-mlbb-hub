@@ -1,0 +1,847 @@
+.header-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  height: auto;
+  gap: 10px;
+  min-height: 100vh;
+  padding: 0 4%;
+  padding-top: 37px;
+}
+
+.header-section {
+  background: linear-gradient(180deg, #040c1c, #042a3d, #084658, #040c1c);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 29s ease infinite;
+  -moz-animation: AnimationName 29s ease infinite;
+  -o-animation: AnimationName 29s ease infinite;
+  animation: AnimationName 29s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 50% 0%
+  }
+
+  50% {
+    background-position: 51% 100%
+  }
+
+  100% {
+    background-position: 50% 0%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 50% 0%
+  }
+
+  50% {
+    background-position: 51% 100%
+  }
+
+  100% {
+    background-position: 50% 0%
+  }
+}
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 50% 0%
+  }
+
+  50% {
+    background-position: 51% 100%
+  }
+
+  100% {
+    background-position: 50% 0%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 50% 0%
+  }
+
+  50% {
+    background-position: 51% 100%
+  }
+}
+
+.header-image {
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100vh;
+  /* Ensures it doesn't exceed the viewport height */
+  position: relative;
+  /* Allows better control for responsive adjustments */
+}
+
+.header-image img {
+  object-fit: cover;
+  transform: translateY(-15%);
+  max-height: 130%;
+  /* Ensures scaling for larger screens */
+  opacity: 80%;
+  width: 100%;
+  /* Ensures it fills the container horizontally */
+}
+
+.header-text {
+  color: #ffffff;
+}
+
+.header-title {
+  font-size: 3rem;
+  /* Default size for large screens */
+  font-family: "Russo One", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  align-content: center;
+  padding-right: 10%;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  margin-top: 10%;
+  margin-bottom: 2rem;
+}
+
+.header-subtitle {
+  font-size: 1rem;
+  /* Default size for large screens */
+  font-family: "Jura", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: left;
+  margin: 0;
+  padding-right: 10%;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  margin-top: 3%;
+  margin-bottom: 2rem;
+}
+
+.header-buttons {
+  position: absolute;
+  z-index: 1002;
+  display: flex;
+  justify-items: center;
+  align-items: top;
+  margin: 0;
+  height: 50px;
+  width: 60%
+}
+
+.explore-button {
+  align-content: center;
+  background-color: #1cdddd;
+  border: none;
+  color: #040c1c;
+  padding: 10px 20px;
+  /* Set padding for responsiveness */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 0 20px;
+}
+
+.join-community-button {
+  align-content: center;
+  background-color: #040c1c;
+  border: 1px solid #1cdddd;
+  color: #1cdddd;
+  padding: 10px 40px;
+  /* Set padding for responsiveness */
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 0 20px;
+}
+
+.game-info {
+  display: grid;
+  background-color: #042a3d;
+  min-height: 75vh;
+  padding: 0 4%;
+}
+
+.game-info-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}
+
+.game-description {
+  padding: 3rem 0;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  font-family: "Oxanium", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.game-text {
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: left;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  height: 100%;
+}
+
+.video-gameplay-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  max-height: 529px;
+  max-width: 100%;
+}
+
+.video-gameplay {
+  max-height: 400px;
+  max-width: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.stats-section {
+  display: grid;
+  background-color: #042a3d;
+  background-image: url(../images/pictures/esports.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  min-height: 25vh;
+  box-sizing: border-box;
+  padding: 0 4%;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  width: 90%;
+  height: 80%;
+  color: white;
+  align-content: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.stats-content {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+
+.stats-content:hover {
+  scale: 1.1;
+}
+
+.stats-text {
+  font-size: 18px;
+  font-family: "jura", sans-serif;
+  font-weight: 300;
+  color: #1cdddd;
+  text-align: center;
+  margin: 0;
+}
+
+.expertise-section {
+  display: grid;
+  background-color: #084658;
+  background-image: url(../images/pictures/mlbb-bg.jpg);
+  background-blend-mode: saturation;
+  background-size: cover;
+  background-position: center;
+  min-height: 75vh;
+  box-sizing: border-box;
+  padding: 0 4%;
+}
+
+.expertise-content {
+  display: grid;
+  min-height: 80%;
+  width: 70%;
+  color: white;
+  align-content: center;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.expertise-title {
+  font-size: 48px;
+  font-family: "Russo One", sans-serif;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.expertise-subtitle {
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  height: auto;
+}
+
+.guides-section {
+  display: grid;
+  background-color: #040c1c;
+  width: 100%;
+  min-height: 120vh;
+  box-sizing: border-box;
+  padding: 0 4%;
+  justify-content: center;
+  align-content: center;
+}
+
+.guides-container {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  gap: 16px;
+  width: 80%;
+  height: 100%;
+  padding: 3rem 0;
+  color: white;
+  justify-self: center;
+}
+
+.guides-heading {
+  box-sizing: border-box;
+  font-size: 48px;
+  font-family: "Russo One", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin-top: 0;
+}
+
+.guides-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  color: white;
+}
+
+.guide-card {
+  box-sizing: border-box;
+  gap: 10px;
+  max-width: 90%;
+  height: 500px;
+  color: white;
+  background-color: #084658;
+  border-radius: 2rem;
+  justify-self: center;
+  transition: 0.5s ease-in-out;
+}
+
+.guide-card:hover {
+  scale: 1.1;
+}
+
+.guide-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.guide-content {
+  width: 80%;
+  justify-items: left;
+  align-items: center;
+  justify-self: center;
+}
+
+.guide-title {
+  font-size: 2.5rem;
+  font-family: "Oxanium", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  margin: 0;
+
+}
+
+.guide-description {
+  font-size: 16px;
+  font-family: "Jura", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.news-section {
+  display: grid;
+  background-color: #042a3d;
+  width: 100%;
+  min-height: auto;
+  box-sizing: border-box;
+  padding-bottom: 3rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.news-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  color: white;
+  align-content: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.news-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.news-title {
+  font-size: 36px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  align-content: end;
+  padding-right: 10%;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  padding: 0% 5%;
+  padding-top: 5%;
+  height: auto;
+}
+
+.news-text {
+  vertical-align: center;
+}
+
+.news-description {
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: left;
+  margin: 0;
+  padding-right: 10%;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  height: 100%;
+  padding: 0% 5%;
+  padding-bottom: 3rem;
+  height: auto;
+}
+
+.read-news-button {
+  font-size: 16px;
+  color: #000000;
+  background-color: #1cdddd;
+  margin: 0 5%;
+  border-radius: 1rem;
+  padding: 15px;
+  text-decoration: none;
+  font-family: "Oxanium", sans-serif;
+  font-weight: bold;
+}
+
+.community-section {
+  display: grid;
+  background-color: #084658;
+  background-image: url(../images/pictures/mlbb-bg.jpg);
+  background-blend-mode: saturation;
+  background-size: cover;
+  background-position: center;
+  min-height: auto;
+  box-sizing: border-box;
+  padding: 0 4%;
+}
+
+.community-container {
+  width: 70%;
+  justify-self: center;
+  padding: 3rem 0;
+}
+
+.community-content {
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  color: white;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.community-title {
+  font-size: 48px;
+  font-family: "Russo One", sans-serif;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-top: 5%;
+}
+
+.community-image {
+  max-width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.community-description {
+  font-size: 1rem;
+  font-family: "Jura", sans-serif;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  height: auto;
+  padding: 0;
+}
+
+.community-buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  color: white;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.join-discord-button {
+  align-content: center;
+  width: 100px;
+  background-color: #1cdddd;
+  border: none;
+  color: #000000;
+  padding: 0 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: bold;
+  margin: 0 20px;
+  justify-self: end;
+}
+
+.watch-youtube-button {
+  align-content: center;
+  width: 100px;
+  background-color: #040c1c;
+  border: none;
+  color: #1cdddd;
+  border: 1px solid #1cdddd;
+  padding: 5px 40px;
+  text-align: center;
+  text-decoration: none;
+
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+footer {
+  background: #042a3d;
+  min-height: auto;
+  width: 100%;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.footer-content p {
+  max-width: 50%;
+  margin: 0;
+
+  font-family: "Jura", sans-serif;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 1rem 0 1srem 0;
+  padding: 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i {
+
+  transition: color .4s ease;
+
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+.socials a img {
+  width: 2rem;
+}
+
+.footer-bottom {
+  background: #040c1c;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+
+  text-transform: capitalize;
+  font-family: "Oxanium", sans-serif;
+
+}
+
+@media (max-width: 767px) {
+
+  .header-section {
+    grid-template-columns: 1fr;
+    min-height: 75vh;
+  }
+
+  .header-image {
+    display: none;
+  }
+  .game-info-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    gap: 10px;
+    padding-top: 3rem;
+  }
+
+  .game-description {
+    order: 2;
+  }
+
+  .video-gameplay-container {
+    order: 1;
+  }
+
+  .game-title {
+    text-align: center;
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  .game-text {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .video-gameplay {
+    max-height: 400px;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .stats-container {
+    padding: 3rem 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .stats-content-span2 {
+    grid-column: span 2;
+
+  }
+
+  .expertise-content {
+    grid-template-columns: 1fr;
+  }
+
+  .guides-section {
+    height: auto;
+  }
+
+  .guides-container {
+    grid-template-rows: 1fr 6fr;
+    row-gap: 10px;
+    margin: auto;
+  }
+
+  .guides-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-bottom: 50px;
+  }
+  .guide-content {
+    margin-top: 20px;
+  }
+
+  .news-section {
+    height: auto;
+  }
+
+  .news-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+/* Tablet: width between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Styles for tablet devices */
+  .header-section {
+    grid-template-columns: 1fr;
+    min-height: 75vh;
+  }
+
+  .header-image {
+    display: none;
+  }
+  .game-info-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    gap: 10px;
+    padding-top: 3rem;
+  }
+
+  .game-description {
+    order: 2;
+  }
+
+  .video-gameplay-container {
+    order: 1;
+  }
+
+  .game-title {
+    text-align: center;
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  .game-text {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .video-gameplay {
+    max-height: 400px;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .stats-container {
+    padding: 3rem 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .stats-content-span2 {
+    grid-column: span 2;
+
+  }
+
+  .expertise-content {
+    grid-template-columns: 1fr;
+  }
+
+  .guides-section {
+    height: auto;
+  }
+
+  .guides-container {
+    grid-template-rows: 1fr 6fr;
+    row-gap: 10px;
+    margin: auto;
+  }
+
+  .guides-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-bottom: 50px;
+  }
+  .guide-content {
+    margin-top: 20px;
+  }
+
+  .news-section {
+    height: auto;
+  }
+
+  .news-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
