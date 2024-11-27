@@ -59,6 +59,12 @@ p {
 }
 
 @media (max-width: 767px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
   h1 {
     font-size: clamp(1.5rem, 5vw, 2rem);
   }
@@ -89,6 +95,12 @@ p {
 }
 
 @media (max-width: 1024px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
   h1 {
     font-size: clamp(1.8rem, 3.5vw, 3rem);
   }
@@ -116,9 +128,23 @@ p {
   p {
     font-size: clamp(0.9rem, 1.5vw, 1rem);
   }
+
+  .join-discord-button {
+    width: 50%;
+    height: auto;
+    font-size: 16px;
+  }
+
+  .watch-youtube-button {
+    width: 50%;
+    height: auto;
+    font-size: 16px;
+  }
+
+  /* .community-buttons-container {
+    width: 50%;
+  } */
 }
-
-
 
 .header {
   width: 100%;

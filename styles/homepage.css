@@ -545,18 +545,17 @@
 }
 
 .community-buttons-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  width: 100%;
+  display: flex;
+  gap: 1rem;
+  max-width: 100%;
   color: white;
-  margin-top: 3%;
+  margin-top: 3rem;
   margin-bottom: 5%;
 }
 
 .join-discord-button {
   align-content: center;
-  width: 100px;
+  max-width: 100px;
   background-color: #1cdddd;
   border: none;
   color: #000000;
@@ -569,8 +568,7 @@
   border-radius: 15px;
   font-family: "Oxanium", sans-serif;
   font-weight: bold;
-  margin: 0 20px;
-  justify-self: end;
+  margin: 0;
 }
 
 .watch-youtube-button {
@@ -584,12 +582,12 @@
   text-align: center;
   text-decoration: none;
 
-  margin: 4px 2px;
+  /* margin: 4px 2px; */
   cursor: pointer;
   border-radius: 15px;
   font-family: "Oxanium", sans-serif;
   font-weight: bold;
-  margin: 0 20px;
+  /* margin: 0 20px; */
 }
 
 footer {
@@ -673,6 +671,10 @@ footer {
   .header-section {
     grid-template-columns: 1fr;
     min-height: 75vh;
+  }
+
+  .head-container {
+    width: 70%;
   }
 
   .header-image {

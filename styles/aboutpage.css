@@ -379,6 +379,11 @@
 }
 
 @media (max-width: 767px) {
+
+    .head-container {
+        width: 70%;
+      }
+      
     .mission-container, .story-container {
         grid-template-columns: 1fr;
         row-gap: 20px;

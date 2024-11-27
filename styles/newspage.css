@@ -509,13 +509,19 @@ img {
 }
 
 @media (max-width: 767px) {
+
+   .head-container {
+      width: 70%;
+    }
+
    .news-container {
        grid-template-rows: 1fr 1fr;
        grid-template-columns: 1fr;
        padding: 3rem 0;
        row-gap: 2rem;
        justify-items: center;
-}
+   }
+   
    .news-content {
      order: 2;
      width: 80%;

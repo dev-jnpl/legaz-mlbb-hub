@@ -77,7 +77,7 @@ jQuery(function ($) {
   var doAnimations = function () {
 
     // Calculate current offset and get all animatables
-    var offset = $(window).scrollTop() + $(window).height() - -200, // Trigger earlier by reducing 100px
+    var offset = $(window).scrollTop() + $(window).height() - -100, // Trigger earlier by reducing 100px
       $animatables = $('.animatable');
 
     // Check all animatables and animate them if necessary

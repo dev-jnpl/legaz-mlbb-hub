@@ -382,6 +382,10 @@
   }
 
   @media (max-width: 767px) {
+    .head-container {
+        width: 70%;
+      }
+
     .community-container {
       grid-template-columns: 1fr;
       row-gap: 2rem;
@@ -419,6 +423,11 @@
         height: 200px;
         width: 250px;
     }
+
+    .highlights-card:hover {
+        transform: scale(1);
+    }
+
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
