@@ -5,7 +5,7 @@
   height: auto;
   gap: 10px;
   min-height: 100vh;
-  padding: 0 4%;
+  /* padding: 0 4%; */
   padding-top: 37px;
 }
 
@@ -21,53 +21,53 @@
 
 @-webkit-keyframes AnimationName {
   0% {
-    background-position: 50% 0%
+    background-position: 50% 0%;
   }
 
   50% {
-    background-position: 51% 100%
+    background-position: 51% 100%;
   }
 
   100% {
-    background-position: 50% 0%
+    background-position: 50% 0%;
   }
 }
 
 @-moz-keyframes AnimationName {
   0% {
-    background-position: 50% 0%
+    background-position: 50% 0%;
   }
 
   50% {
-    background-position: 51% 100%
+    background-position: 51% 100%;
   }
 
   100% {
-    background-position: 50% 0%
+    background-position: 50% 0%;
   }
 }
 
 @-o-keyframes AnimationName {
   0% {
-    background-position: 50% 0%
+    background-position: 50% 0%;
   }
 
   50% {
-    background-position: 51% 100%
+    background-position: 51% 100%;
   }
 
   100% {
-    background-position: 50% 0%
+    background-position: 50% 0%;
   }
 }
 
 @keyframes AnimationName {
   0% {
-    background-position: 50% 0%
+    background-position: 50% 0%;
   }
 
   50% {
-    background-position: 51% 100%
+    background-position: 51% 100%;
   }
 }
 
@@ -129,49 +129,33 @@
   z-index: 1002;
   display: flex;
   justify-items: center;
-  align-items: top;
-  margin: 0;
-  height: 50px;
-  width: 60%
+  gap: 1rem;
 }
 
-.explore-button {
+.header-buttons a {
   align-content: center;
-  background-color: #1cdddd;
-  border: none;
-  color: #040c1c;
   padding: 10px 20px;
-  /* Set padding for responsiveness */
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 1rem;
   cursor: pointer;
   border-radius: 15px;
   font-family: "Oxanium", sans-serif;
   font-weight: bold;
-  transition: background-color 0.3s ease;
-  margin: 0 20px;
+  transition: all 0.3s ease;
+}
+
+.explore-button {
+  background-color: #1cdddd;
+  border: none;
+  color: #040c1c;
 }
 
 .join-community-button {
-  align-content: center;
   background-color: #040c1c;
   border: 1px solid #1cdddd;
   color: #1cdddd;
-  padding: 10px 40px;
-  /* Set padding for responsiveness */
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 15px;
-  font-family: "Oxanium", sans-serif;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  margin: 0 20px;
 }
 
 .game-info {
@@ -289,13 +273,13 @@
 }
 
 .expertise-content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 80%;
-  width: 70%;
+  width: 100%;
   color: white;
-  align-content: center;
-  align-self: center;
-  justify-self: center;
   text-align: center;
 }
 
@@ -305,6 +289,7 @@
   color: #ffffff;
   line-height: 1.2;
   letter-spacing: 1px;
+  max-width: 45ch;
 }
 
 .expertise-subtitle {
@@ -332,7 +317,7 @@
   display: grid;
   grid-template-rows: 20% 80%;
   gap: 16px;
-  width: 80%;
+  width: 100%;
   height: 100%;
   padding: 3rem 0;
   color: white;
@@ -386,10 +371,7 @@
 }
 
 .guide-content {
-  width: 80%;
-  justify-items: left;
-  align-items: center;
-  justify-self: center;
+  padding: 1rem;
 }
 
 .guide-title {
@@ -401,7 +383,6 @@
   line-height: 1.2;
   letter-spacing: 0.5px;
   margin: 0;
-
 }
 
 .guide-description {
@@ -420,7 +401,7 @@
   width: 100%;
   min-height: auto;
   box-sizing: border-box;
-  padding-bottom: 3rem;
+  padding: 3rem;
   justify-content: center;
   align-content: center;
 }
@@ -428,7 +409,7 @@
 .news-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 3rem;
   color: white;
   align-content: center;
   align-self: center;
@@ -453,8 +434,6 @@
   padding-right: 10%;
   line-height: 1.2;
   letter-spacing: 0.5px;
-  padding: 0% 5%;
-  padding-top: 5%;
   height: auto;
 }
 
@@ -468,26 +447,21 @@
   font-weight: 300;
   color: #ffffff;
   text-align: left;
-  margin: 0;
-  padding-right: 10%;
+  margin-bottom: 2rem;
   line-height: 1.2;
   letter-spacing: 0.5px;
-  height: 100%;
-  padding: 0% 5%;
-  padding-bottom: 3rem;
-  height: auto;
 }
 
 .read-news-button {
   font-size: 16px;
   color: #000000;
   background-color: #1cdddd;
-  margin: 0 5%;
   border-radius: 1rem;
   padding: 15px;
   text-decoration: none;
   font-family: "Oxanium", sans-serif;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .community-section {
@@ -503,7 +477,7 @@
 }
 
 .community-container {
-  width: 70%;
+  width: 100%;
   justify-self: center;
   padding: 3rem 0;
 }
@@ -546,48 +520,40 @@
 
 .community-buttons-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
-  max-width: 100%;
+  width: 100%;
   color: white;
-  margin-top: 3rem;
-  margin-bottom: 5%;
+  margin: 3rem auto 0 auto;
 }
 
-.join-discord-button {
+.community-buttons-container a {
   align-content: center;
-  max-width: 100px;
-  background-color: #1cdddd;
-  border: none;
-  color: #000000;
-  padding: 0 40px;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
-  margin: 4px 2px;
   cursor: pointer;
+  padding: 10px 15px;
   border-radius: 15px;
   font-family: "Oxanium", sans-serif;
   font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.join-discord-button {
+  background-color: #1cdddd;
+  border: none;
+  color: #000000;
+  padding: 5px;
+  font-size: 18px;
   margin: 0;
 }
 
 .watch-youtube-button {
-  align-content: center;
-  width: 100px;
   background-color: #040c1c;
-  border: none;
   color: #1cdddd;
   border: 1px solid #1cdddd;
-  padding: 5px 40px;
-  text-align: center;
-  text-decoration: none;
-
-  /* margin: 4px 2px; */
-  cursor: pointer;
-  border-radius: 15px;
-  font-family: "Oxanium", sans-serif;
-  font-weight: bold;
-  /* margin: 0 20px; */
+  padding: 5px;
 }
 
 footer {
@@ -606,11 +572,9 @@ footer {
 }
 
 .footer-content h3 {
-
   font-weight: 400;
   text-transform: capitalize;
   font-family: "Oxanium", sans-serif;
-
 }
 
 .footer-content p {
@@ -639,9 +603,7 @@ footer {
 }
 
 .socials a i {
-
-  transition: color .4s ease;
-
+  transition: color 0.4s ease;
 }
 
 .socials a:hover i {
@@ -660,17 +622,14 @@ footer {
 }
 
 .footer-bottom p {
-
   text-transform: capitalize;
   font-family: "Oxanium", sans-serif;
-
 }
 
 @media (max-width: 767px) {
-
   .header-section {
     grid-template-columns: 1fr;
-    min-height: 75vh;
+    /* min-height: 75vh; */
   }
 
   .head-container {
@@ -680,6 +639,7 @@ footer {
   .header-image {
     display: none;
   }
+
   .game-info-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -722,11 +682,14 @@ footer {
 
   .stats-content-span2 {
     grid-column: span 2;
-
   }
 
-  .expertise-content {
-    grid-template-columns: 1fr;
+  .expertise-title {
+    text-align: left;
+  }
+
+  .expertise-subtitle {
+    text-align: left;
   }
 
   .guides-section {
@@ -744,6 +707,7 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
     padding-bottom: 50px;
   }
+
   .guide-content {
     margin-top: 20px;
   }
@@ -755,6 +719,16 @@ footer {
   .news-content {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .community-buttons-container {
+    flex-direction: column;
+  }
+
+  .community-buttons-container a {
+    width: 100%;
+    padding: 10px;
   }
 }
 
@@ -770,6 +744,7 @@ footer {
   .header-image {
     display: none;
   }
+
   .game-info-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -812,11 +787,6 @@ footer {
 
   .stats-content-span2 {
     grid-column: span 2;
-
-  }
-
-  .expertise-content {
-    grid-template-columns: 1fr;
   }
 
   .guides-section {
@@ -834,6 +804,7 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
     padding-bottom: 50px;
   }
+
   .guide-content {
     margin-top: 20px;
   }

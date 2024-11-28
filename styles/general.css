@@ -3,9 +3,13 @@ html {
   scroll-padding-top: 100px;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -191,22 +195,27 @@ nav {
   position: absolute;
   display: none;
 }
+
 .wrapper__checkbox {
   display: none;
 }
-.wrapper__checkbox:checked ~ .wrapper__menu {
-  right: 0; }
 
-.wrapper__checkbox:checked ~ .wrapper__button .wrapper__button-line:nth-child(1) {
+.wrapper__checkbox:checked~.wrapper__menu {
+  right: 0;
+}
+
+.wrapper__checkbox:checked~.wrapper__button .wrapper__button-line:nth-child(1) {
   transform: rotate(45deg);
-  top: 8px;  
+  top: 8px;
 }
-.wrapper__checkbox:checked ~ .wrapper__button .wrapper__button-line:nth-child(2) {
-  opacity: 0;  
+
+.wrapper__checkbox:checked~.wrapper__button .wrapper__button-line:nth-child(2) {
+  opacity: 0;
 }
-.wrapper__checkbox:checked ~ .wrapper__button .wrapper__button-line:nth-child(3) {
+
+.wrapper__checkbox:checked~.wrapper__button .wrapper__button-line:nth-child(3) {
   transform: rotate(-45deg);
-  top: -6px;  
+  top: -6px;
 }
 
 .wrapper__button {
@@ -225,6 +234,7 @@ nav {
   z-index: 1;
   position: fixed;
 }
+
 .wrapper__button-line {
   display: block;
   width: 20px;
@@ -232,16 +242,17 @@ nav {
   border-radius: 5px;
   background: #1cdddd;
   margin: 2px 0;
-  position: relative;  
-  transition: all .2s ;
+  position: relative;
+  transition: all .2s;
 }
+
 .wrapper__menu {
   position: fixed;
   top: 0;
   right: -100%;
   width: 250px;
   height: 500px;
-  background: rgba(4,12,28, 0.8);
+  background: rgba(4, 12, 28, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -250,6 +261,7 @@ nav {
   transition: right .4s;
   border-bottom-left-radius: 100px;
 }
+
 .wrapper__menu-link {
 
   line-height: 20px;
@@ -261,15 +273,19 @@ nav {
   transition: all .2s linear;
   font-family: "Oxanium", sans-serif;
 }
+
 .wrapper__menu-link:hover {
   padding-right: 20px;
   color: #1cdddd;
 }
 
 .active-link {
-  color: #1cdddd; /* Highlight color */
-  border-bottom: 2px solid #1cdddd; /* Bottom border for active link */
-  transition: all 0.4s ease-in-out; /* Smooth transition for effects */
+  color: #1cdddd;
+  /* Highlight color */
+  border-bottom: 2px solid #1cdddd;
+  /* Bottom border for active link */
+  transition: all 0.4s ease-in-out;
+  /* Smooth transition for effects */
 }
 
 .nav-container ul {
@@ -344,7 +360,7 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  transition: background-color .3s, 
+  transition: background-color .3s,
     opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
@@ -361,9 +377,11 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   background-color: #fff;
 }
+
 #button:active {
   background-color: #1cdddd;
 }
+
 #button.show {
   opacity: 1;
   visibility: visible;
@@ -451,21 +469,21 @@ footer {
 @media (min-width: 768px) and (max-width: 1024px) {
   nav {
     display: none;
-}
+  }
 
-   .wrapper {
+  .wrapper {
     display: block;
-   }
+  }
 }
 
 @media (max-width: 767px) {
   nav {
     display: none;
-}
+  }
 
-   .wrapper {
+  .wrapper {
     display: block;
-   }
+  }
 }
 
 .block {
@@ -476,32 +494,33 @@ footer {
   color: #fdfdfd;
   text-align: center;
   margin: 1em auto;
-  text-shadow: 0 0 1px #333; /* so one can see fadeBgColor properly */
+  text-shadow: 0 0 1px #333;
+  /* so one can see fadeBgColor properly */
 }
 
 .animatable {
-  
+
   /* initially hide animatable objects */
   visibility: hidden;
-  
+
   /* initially pause animatable objects their animations */
-  -webkit-animation-play-state: paused;   
-  -moz-animation-play-state: paused;     
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   -ms-animation-play-state: paused;
-  -o-animation-play-state: paused;   
-  animation-play-state: paused; 
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 /* show objects being animated */
 .animate-in {
   visibility: visible;
-  
+
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
-  
+
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -ms-animation-duration: 1s;
@@ -517,13 +536,13 @@ footer {
 
 .animate-out {
   visibility: visible;
-  
+
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
-  
+
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -ms-animation-duration: 1s;
@@ -553,7 +572,9 @@ footer {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
-  } 100% {
+  }
+
+  100% {
     opacity: 1;
     -webkit-transform: translateY(0);
   }
@@ -588,6 +609,7 @@ footer {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -600,9 +622,11 @@ footer {
   0% {
     opacity: 0;
   }
+
   20% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -612,9 +636,11 @@ footer {
   0% {
     opacity: 0;
   }
+
   20% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -624,9 +650,11 @@ footer {
   0% {
     opacity: 0;
   }
+
   20% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -636,21 +664,26 @@ footer {
   0% {
     opacity: 0;
   }
+
   60% {
     opacity: 0;
   }
+
   20% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes bounceInLeft {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
   }
+
   60% {
     -webkit-transform: translateX(20px);
   }
@@ -725,6 +758,7 @@ footer {
     transform: translateX(0);
   }
 }
+
 @-webkit-keyframes bounceInRight {
   0% {
     opacity: 0;
@@ -804,11 +838,14 @@ footer {
     transform: translateX(0);
   }
 }
+
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px);
-  } 100% {
+  }
+
+  100% {
     opacity: 1;
     -webkit-transform: translateY(0);
   }
@@ -849,11 +886,13 @@ footer {
     transform: translateY(0);
   }
 }
+
 @-webkit-keyframes bounceIn {
   0% {
     opacity: 0;
     -webkit-transform: scale(.3);
   }
+
   50% {
     -webkit-transform: scale(1.05);
   }
@@ -927,11 +966,14 @@ footer {
     transform: scale(1);
   }
 }
+
 @-webkit-keyframes moveUp {
   0% {
     opacity: 1;
     -webkit-transform: translateY(40px);
-  } 100% {
+  }
+
+  100% {
     opacity: 1;
     -webkit-transform: translateY(0);
   }
@@ -974,94 +1016,123 @@ footer {
 }
 
 @-webkit-keyframes fadeBgColor {
-  0%{
-    background:none;
+  0% {
+    background: none;
   }
-  70%{
-    background:none;
+
+  70% {
+    background: none;
   }
-  100%{
-    background:#464646;
-  }
-}
-@-o-keyframes fadeBgColor {
-  0%{
-    background:none;
-  }
-  70%{
-    background:none;
-  }
-  100%{
-    background:#464646;
-  }
-}
-@keyframes fadeBgColor {
-  0%{
-    background:none;
-  }
-  70%{
-    background:none;
-  }
-  100%{
-    background:#464646;
+
+  100% {
+    background: #464646;
   }
 }
 
-.animate-in.animationDelay, .animate-out.animationDelay {
-  animation-delay:.4s;
-  -webkit-animation-delay:.4s;
+@-o-keyframes fadeBgColor {
+  0% {
+    background: none;
+  }
+
+  70% {
+    background: none;
+  }
+
+  100% {
+    background: #464646;
+  }
 }
-.animate-in.animationDelayMed, .animate-out.animationDelayMed {
-  animation-delay:1.2s;
-  -webkit-animation-delay:1.2s;
+
+@keyframes fadeBgColor {
+  0% {
+    background: none;
+  }
+
+  70% {
+    background: none;
+  }
+
+  100% {
+    background: #464646;
+  }
 }
-.animate-in.animationDelayLong, .animate-out.animationDelayLong {
-  animation-delay:1.6s;
-  -webkit-animation-delay:1.6s;
+
+.animate-in.animationDelay,
+.animate-out.animationDelay {
+  animation-delay: .4s;
+  -webkit-animation-delay: .4s;
 }
-.animate-in.fadeBgColor, .animate-out.fadeBgColor {
+
+.animate-in.animationDelayMed,
+.animate-out.animationDelayMed {
+  animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+}
+
+.animate-in.animationDelayLong,
+.animate-out.animationDelayLong {
+  animation-delay: 1.6s;
+  -webkit-animation-delay: 1.6s;
+}
+
+.animate-in.fadeBgColor,
+.animate-out.fadeBgColor {
   -webkit-animation-name: fadeBgColor;
   -moz-animation-name: fadeBgColor;
   -o-animation-name: fadeBgColor;
   animation-name: fadeBgColor;
 }
-.animate-in.bounceIn, .animate-out.bounceIn {
+
+.animate-in.bounceIn,
+.animate-out.bounceIn {
   -webkit-animation-name: bounceIn;
   -moz-animation-name: bounceIn;
   -o-animation-name: bounceIn;
   animation-name: bounceIn;
 }
-.animate-in.bounceInRight, .animate-out.bounceInRight {
+
+.animate-in.bounceInRight,
+.animate-out.bounceInRight {
   -webkit-animation-name: bounceInRight;
   -moz-animation-name: bounceInRight;
   -o-animation-name: bounceInRight;
   animation-name: bounceInRight;
 }
-.animate-in.bounceInLeft, .animate-out.bounceInLeft {
+
+.animate-in.bounceInLeft,
+.animate-out.bounceInLeft {
   -webkit-animation-name: bounceInLeft;
   -moz-animation-name: bounceInLeft;
   -o-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
 }
-.animate-in.fadeIn, .animate-out.fadeIn {
+
+.animate-in.fadeIn,
+.animate-out.fadeIn {
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
   -o-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-.animate-in.fadeInDown, .animate-out.fadeInDown {
+
+.animate-in.fadeInDown,
+.animate-out.fadeInDown {
   -webkit-animation-name: fadeInDown;
   -moz-animation-name: fadeInDown;
   -o-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
-.animate-in.fadeInUp, .animate-out.fadeInUp {
+
+.animate-in.fadeInUp,
+.animate-out.fadeInUp {
   -webkit-animation-name: fadeInUp;
   -moz-animation-name: fadeInUp;
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
-.animate-in.moveUp, .animate-out.moveUp {
+
+.animate-in.moveUp,
+.animate-out.moveUp {
   -webkit-animation-name: moveUp;
   -moz-animation-name: moveUp;
   -o-animation-name: moveUp;
