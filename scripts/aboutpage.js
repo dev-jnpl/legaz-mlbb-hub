@@ -9,7 +9,7 @@ document.getElementById('profileToggle').addEventListener('change', function () 
     profile1.classList.add('hiding', 'transform');
     profile2.classList.add('hiding', 'transform');
 
-    // Add 'image-hiding' class to trigger fade-out for images
+    // Add 'image-hiding' class to trigger fade-out for ../images
     profile1Image.classList.add('image-hiding');
     profile2Image.classList.add('image-hiding');
 
@@ -38,15 +38,15 @@ document.getElementById('profileToggle').addEventListener('change', function () 
                 <h3>
                 <div class="full-span soc-med">
                 <div class="full-span soc-med">
-                <a href="https://www.facebook.com/JAEPYYY?mibextid=ZbWKwL" target="_blank"><img src="images/png/facebook.png" alt="facebook"></a>
-                <a href="https://m.me/JAEPYYY" target="_blank"><img src="images/png/messenger.png" alt="messenger"></a>
-                <a href="https://www.instagram.com/paulaureano_?igsh=MWxka2Y2d2h2cXRubg==" target="_blank"><img src="images/png/instagram.png" alt="instagram"></a>
-                <a href="t.me/janpol_123" target="_blank"><img src="images/png/telegram.png" alt="telegram"></a>
-                <a href="https://www.tiktok.com/@jjjnpl?_t=8rejG1Wgwjg&_r=1" target="_blank"><img src="images/png/tiktok.png" alt="tiktok"></a>
+                <a href="https://www.facebook.com/JAEPYYY?mibextid=ZbWKwL" target="_blank"><img src="../images/png/facebook.png" alt="facebook"></a>
+                <a href="https://m.me/JAEPYYY" target="_blank"><img src="../images/png/messenger.png" alt="messenger"></a>
+                <a href="https://www.instagram.com/paulaureano_?igsh=MWxka2Y2d2h2cXRubg==" target="_blank"><img src="../images/png/instagram.png" alt="instagram"></a>
+                <a href="t.me/janpol_123" target="_blank"><img src="../images/png/telegram.png" alt="telegram"></a>
+                <a href="https://www.tiktok.com/@jjjnpl?_t=8rejG1Wgwjg&_r=1" target="_blank"><img src="../images/png/tiktok.png" alt="tiktok"></a>
             </div>
                 
             `;
-            profile1Image.src = 'images/pictures/mlbb-avatar.jpg';
+            profile1Image.src = '../images/pictures/mlbb-avatar.jpg';
 
             // Update Profile 2
             profile2.querySelector('.who-name').innerHTML = 
@@ -66,15 +66,15 @@ document.getElementById('profileToggle').addEventListener('change', function () 
                 <span>Peak Rank</span></h3>
                 <h3>
                 <div class="full-span soc-med">
-                <a href=""><img src="images/png/facebook.png" alt="facebook"></a>
-                <a href=""><img src="images/png/messenger.png" alt="messenger"></a>
-                <a href=""><img src="images/png/instagram.png" alt="instagram"></a>
-                <a href=""><img src="images/png/telegram.png" alt="telegram"></a>
-                <a href=""><img src="images/png/tiktok.png" alt="tiktok"></a>
+                <a href=""><img src="../images/png/facebook.png" alt="facebook"></a>
+                <a href=""><img src="../images/png/messenger.png" alt="messenger"></a>
+                <a href=""><img src="../images/png/instagram.png" alt="instagram"></a>
+                <a href=""><img src="../images/png/telegram.png" alt="telegram"></a>
+                <a href=""><img src="../images/png/tiktok.png" alt="tiktok"></a>
                 </div>
                 
             `;
-            profile2Image.src = 'images/pictures/mlbb-avatar.jpg';
+            profile2Image.src = '../images/pictures/mlbb-avatar.jpg';
         } else {
             // Offline Profile
             toggleText.innerText = "Off-Game";
@@ -91,14 +91,14 @@ document.getElementById('profileToggle').addEventListener('change', function () 
                 "Code is like humor. When you have to explain it, it’s bad."<br>
                 <span>— Cory House</span></h3>
                 <div class="full-span soc-med">
-                <a href="https://www.facebook.com/JAEPYYY?mibextid=ZbWKwL" target="_blank"><img src="images/png/facebook.png" alt="facebook"></a>
-                <a href="https://m.me/JAEPYYY" target="_blank"><img src="images/png/messenger.png" alt="messenger"></a>
-                <a href="https://www.instagram.com/paulaureano_?igsh=MWxka2Y2d2h2cXRubg==" target="_blank"><img src="images/png/instagram.png" alt="instagram"></a>
-                <a href="t.me/janpol_123" target="_blank"><img src="images/png/telegram.png" alt="telegram"></a>
-                <a href="https://www.tiktok.com/@jjjnpl?_t=8rejG1Wgwjg&_r=1" target="_blank"><img src="images/png/tiktok.png" alt="tiktok"></a>
+                <a href="https://www.facebook.com/JAEPYYY?mibextid=ZbWKwL" target="_blank"><img src="../images/png/facebook.png" alt="facebook"></a>
+                <a href="https://m.me/JAEPYYY" target="_blank"><img src="../images/png/messenger.png" alt="messenger"></a>
+                <a href="https://www.instagram.com/paulaureano_?igsh=MWxka2Y2d2h2cXRubg==" target="_blank"><img src="../images/png/instagram.png" alt="instagram"></a>
+                <a href="t.me/janpol_123" target="_blank"><img src="../images/png/telegram.png" alt="telegram"></a>
+                <a href="https://www.tiktok.com/@jjjnpl?_t=8rejG1Wgwjg&_r=1" target="_blank"><img src="../images/png/tiktok.png" alt="tiktok"></a>
             </div>
             `;
-            profile1Image.src = 'images/pictures/profile-jp.jpg';
+            profile1Image.src = '../images/pictures/profile-jp.jpg';
 
             // Reset Profile 2
             profile2.querySelector('.who-name').innerHTML = 
@@ -112,14 +112,14 @@ document.getElementById('profileToggle').addEventListener('change', function () 
                 "Have you tried turning it off and on again?"<br>
                 <span>— Every IT Guy Ever</span>
                 <div class="full-span soc-med">
-                <a href=""><img src="images/png/facebook.png" alt="facebook"></a>
-                <a href=""><img src="images/png/messenger.png" alt="messenger"></a>
-                <a href=""><img src="images/png/instagram.png" alt="instagram"></a>
-                <a href=""><img src="images/png/telegram.png" alt="telegram"></a>
-                <a href=""><img src="images/png/tiktok.png" alt="tiktok"></a>
+                <a href=""><img src="../images/png/facebook.png" alt="facebook"></a>
+                <a href=""><img src="../images/png/messenger.png" alt="messenger"></a>
+                <a href=""><img src="../images/png/instagram.png" alt="instagram"></a>
+                <a href=""><img src="../images/png/telegram.png" alt="telegram"></a>
+                <a href=""><img src="../images/png/tiktok.png" alt="tiktok"></a>
                 </div>
             `;
-            profile2Image.src = 'images/pictures/profile-cb.jpg';
+            profile2Image.src = '../images/pictures/profile-cb.jpg';
         }
 
         // Remove 'hiding' and 'transform' classes to trigger fade-in and reset position

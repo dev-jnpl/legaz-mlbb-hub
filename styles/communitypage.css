@@ -58,7 +58,7 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2rem;
+    padding: 2rem 0;
     column-gap: 2rem;
     justify-self: center;
     align-self: center;
@@ -96,6 +96,7 @@
     font-family: "Jura", sans-serif;
     font-weight: 300;
     color: #ffffff;
+    max-width: 60ch;
     text-align: left;
     line-height: 1.2;
     letter-spacing: 0.5px;
@@ -130,7 +131,7 @@
     width: 100%;
 }
 
-.carousel-open:checked + .carousel-item {
+.carousel-open:checked+.carousel-item {
     position: static;
     opacity: 100;
 }
@@ -206,15 +207,15 @@
     color: #1cdddd;
 }
 
-#carousel1-1:checked ~ #carousel-1-container .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel1-2:checked ~ #carousel-1-container .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel1-3:checked ~ #carousel-1-container .carousel-indicators li:nth-child(3) .carousel-bullet {
+#carousel1-1:checked~#carousel-1-container .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel1-2:checked~#carousel-1-container .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel1-3:checked~#carousel-1-container .carousel-indicators li:nth-child(3) .carousel-bullet {
     color: #428bca;
 }
 
-#carousel2-1:checked ~ #carousel-2-container .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel2-2:checked ~ #carousel-2-container .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel2-3:checked ~ #carousel-2-container .carousel-indicators li:nth-child(3) .carousel-bullet {
+#carousel2-1:checked~#carousel-2-container .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel2-2:checked~#carousel-2-container .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel2-3:checked~#carousel-2-container .carousel-indicators li:nth-child(3) .carousel-bullet {
     color: #DA5930;
 }
 
@@ -228,11 +229,11 @@
     width: 90%;
     height: 90%;
     display: grid;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 3rem;
     column-gap: 0.5rem;
-    row-gap: 0.5rem;
+    row-gap: 2rem;
     justify-self: center;
     align-self: center;
     grid-auto-flow: row;
@@ -241,8 +242,9 @@
 }
 
 .highlights-title {
-    grid-column: span 3;
     color: #1cdddd;
+    text-align: center;
+    padding: 0 1rem;
 }
 
 .highlights-card {
@@ -289,16 +291,16 @@
     background-position: center;
     height: auto;
     box-sizing: border-box;
-    padding: 0 4%;
-  }
-  
-  .cta-container {
-    width: 70%;
+    margin: 0;
+}
+
+.cta-container {
+    width: 100%;
     justify-self: center;
     padding: 3rem 0;
-  }
-  
-  .cta-content {
+}
+
+.cta-content {
     gap: 10px;
     justify-items: center;
     align-items: center;
@@ -306,137 +308,145 @@
     align-self: center;
     justify-self: center;
     text-align: center;
-  }
-  
-  .cta-title {
-    font-size: 48px; 
-    font-family: "Russo One", sans-serif; 
+}
+
+.cta-title {
+    font-size: 48px;
+    font-family: "Russo One", sans-serif;
     color: #ffffff;
     line-height: 1.2;
     letter-spacing: 1px;
-    margin-top: 5%;
-  }
-  
-  .cta-image {
+}
+
+.cta-image {
     max-width: 100%;
     max-height: 600px;
     object-fit: cover;
-  }
-  
-  .cta-description {
-    font-size: 18px; 
-    font-family: "Jura", sans-serif; 
+}
+
+.cta-description {
+    font-size: 1rem;
+    font-family: "Jura", sans-serif;
     color: #ffffff;
-    margin: 0; 
+    max-width: 60ch;
+    margin: 0;
     line-height: 1.2;
     letter-spacing: 0.5px;
     height: auto;
     padding: 0;
-  }
-  
-  .community-buttons-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+}
+
+.community-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     width: 100%;
     color: white;
-    margin-top: 3%;
-    margin-bottom: 5%;
-  }
-  
-  .join-discord-button {
+    margin: 3rem auto 0 auto;
+}
+
+.community-buttons-container a {
     align-content: center;
-    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-family: "Oxanium", sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.join-discord-button {
     background-color: #1cdddd;
     border: none;
     color: #000000;
-    padding: 0 40px;
-    text-align: center;
-    text-decoration: none;
+    padding: 5px;
     font-size: 18px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 15px;
-    font-family: "Oxanium", sans-serif;
-    font-weight: bold;
-    margin: 0 20px;
-    justify-self: end;
-  }
-  
-  .watch-youtube-button {
-    align-content: center;
-    width: 100px;
-    background-color: #040c1c;
-    border: none;
-    color: #1cdddd;
-    padding: 5px 40px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 15px;
-    font-family: "Oxanium", sans-serif;
-    font-weight: bold;
-    margin: 0 20px;
-  }
+    margin: 0;
+}
 
-  @media (max-width: 767px) {
+.watch-youtube-button {
+    background-color: #040c1c;
+    color: #1cdddd;
+    border: 1px solid #1cdddd;
+    padding: 5px;
+}
+
+@media (max-width: 767px) {
     .head-container {
         width: 70%;
-      }
+    }
 
     .community-container {
-      grid-template-columns: 1fr;
-      row-gap: 2rem;
-      text-align: center;
-      padding: 3rem 0;
-      justify-items: center;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        text-align: center;
+        padding: 3rem 0;
+        justify-items: center;
     }
 
     .community-content {
         order: 2;
-        width: 80%;
+        width: 100%;
     }
 
-    .community-title, .community-description {
+    .community-title,
+    .community-description {
         text-align: center;
     }
 
     .community-slider {
-      order: 1;
+        order: 1;
     }
 
     .highlights-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 1fr;
         row-gap: 2rem;
         padding: 3rem 0;
     }
 
     .highlights-title {
-        grid-column: span 2;
         text-align: center;
     }
 
     .highlights-card {
-        height: 200px;
-        width: 250px;
+        height: 250px;
+        width: 300px;
+    }
+
+    .highlights-description {
+        font-size: 20px;
     }
 
     .highlights-card:hover {
         transform: scale(1);
     }
 
-  }
+    .community-buttons-container {
+        flex-direction: column;
+    }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+    .community-buttons-container a {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .cta-title {
+        font-size: clamp(2.5rem, 3vw, 2rem);
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
     .community-container {
-      grid-template-columns: 1fr;
-      row-gap: 2rem;
-      text-align: center;
-      padding: 3rem 0;
-      justify-items: center;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        text-align: center;
+        padding: 3rem 0;
+        justify-items: center;
     }
 
     .community-content {
@@ -444,24 +454,28 @@
         width: 80%;
     }
 
-    .community-title, .community-description {
+    .community-title,
+    .community-description {
         text-align: center;
     }
 
     .community-slider {
-      order: 1;
+        order: 1;
     }
 
     .highlights-container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
         row-gap: 2rem;
         padding: 3rem 0;
+    }
+
+    .highlights-card {
+        height: 250px;
+        width: 350px;
     }
 
     .highlights-title {
         grid-column: span 2;
         text-align: center;
     }
-  }
-
+}

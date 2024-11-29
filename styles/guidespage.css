@@ -30,6 +30,7 @@
   font-size: 2.5rem;
   margin-bottom: 1rem;
   margin-top: 0;
+  vertical-align: middle;
 }
 
 .description {
@@ -54,9 +55,9 @@
 
 .guides-container {
   display: grid;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 20% 80%;
   gap: 16px;
-  width: 80%;
+  width: 100%;
   height: 100%;
   padding: 3rem 0;
   color: white;
@@ -69,13 +70,15 @@
   gap: 10px;
   width: 100%;
   color: white;
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
 
 .guide-card {
   box-sizing: border-box;
   gap: 10px;
   max-width: 90%;
-  min-height: 450px;
+  min-height: 400px;
   color: white;
   background-color: #084658;
   border-radius: 2rem;
@@ -93,10 +96,7 @@
 }
 
 .guide-content {
-  width: 80%;
-  justify-items: center;
-  align-items: center;
-  justify-self: center;
+  padding: 1rem;
 }
 
 .guide-title {
@@ -104,11 +104,10 @@
   font-family: "Oxanium", sans-serif;
   font-weight: bold;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
   line-height: 1.2;
   letter-spacing: 0.5px;
   margin: 0;
-
 }
 
 .guide-description {
@@ -116,7 +115,7 @@
   font-family: "Jura", sans-serif;
   font-weight: 300;
   color: #ffffff;
-  text-align: center;
+  /* text-align: center; */
   line-height: 1.2;
   letter-spacing: 0.5px;
 }
@@ -168,12 +167,12 @@
   }
 
   .guide-card {
-    min-height: 280px;
+    height: auto;
   }
 
   .guides-container {
-    grid-template-rows: 250px 6fr;
-    row-gap: 0;
+    grid-template-rows: 200px 6fr;
+    row-gap: 1rem;
     margin: auto;
   }
 
@@ -181,8 +180,5 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     padding-bottom: 50px;
-  }
-  .guide-content {
-    margin-top: 20px;
   }
 }

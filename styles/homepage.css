@@ -200,7 +200,7 @@
   display: grid;
   justify-items: center;
   align-items: center;
-  max-height: 529px;
+  max-height: auto;
   max-width: 100%;
 }
 
@@ -511,6 +511,7 @@
   font-size: 1rem;
   font-family: "Jura", sans-serif;
   color: #ffffff;
+  max-width: 60ch;
   margin: 0;
   line-height: 1.2;
   letter-spacing: 0.5px;
@@ -556,84 +557,18 @@
   padding: 5px;
 }
 
-footer {
-  background: #042a3d;
-  min-height: auto;
-  width: 100%;
-  color: #fff;
-}
-
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.footer-content h3 {
-  font-weight: 400;
-  text-transform: capitalize;
-  font-family: "Oxanium", sans-serif;
-}
-
-.footer-content p {
-  max-width: 50%;
-  margin: 0;
-
-  font-family: "Jura", sans-serif;
-}
-
-.socials {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  margin: 1rem 0 1srem 0;
-  padding: 0;
-}
-
-.socials li {
-  margin: 0 10px;
-}
-
-.socials a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.socials a i {
-  transition: color 0.4s ease;
-}
-
-.socials a:hover i {
-  color: aqua;
-}
-
-.socials a img {
-  width: 2rem;
-}
-
-.footer-bottom {
-  background: #040c1c;
-  width: 100%;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.footer-bottom p {
-  text-transform: capitalize;
-  font-family: "Oxanium", sans-serif;
-}
-
 @media (max-width: 767px) {
   .header-section {
     grid-template-columns: 1fr;
-    /* min-height: 75vh; */
+    min-height: 75vh;
   }
 
   .head-container {
     width: 70%;
+  }
+
+  .header-title {
+    font-size: clamp(2.5rem, 5vw, 2rem);
   }
 
   .header-image {
@@ -643,7 +578,7 @@ footer {
   .game-info-content {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     text-align: center;
     gap: 10px;
     padding-top: 3rem;
@@ -685,15 +620,20 @@ footer {
   }
 
   .expertise-title {
-    text-align: left;
+    text-align: center;
+    font-size: clamp(2.5rem, 3vw, 2rem);
   }
 
   .expertise-subtitle {
-    text-align: left;
+    text-align: center;
   }
 
   .guides-section {
     height: auto;
+  }
+
+  .guides-heading {
+    font-size: clamp(2.5rem, 3vw, 2rem);
   }
 
   .guides-container {
@@ -705,7 +645,13 @@ footer {
   .guides-list {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 3rem;
     padding-bottom: 50px;
+  }
+
+  .guide-card {
+    height: 500px;
+    width: 80%;
   }
 
   .guide-content {
@@ -720,6 +666,10 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
+  }
+
+  .community-title {
+    font-size: clamp(2.5rem, 3vw, 2rem);
   }
 
   .community-buttons-container {
