@@ -104,7 +104,7 @@
     width: 85%;
     padding: 1rem 2rem;
     column-gap: 2rem;
-    row-gap: 0;
+    row-gap: 5rem;
 }
 
 .section-title {
@@ -407,8 +407,8 @@
     }
 
     .offer-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        grid-template-columns: 1fr;
+        row-gap: 60px;
         width: 100%;
     }
 
@@ -544,6 +544,6 @@
 @media (max-width: 425px) {
     .offer-container {
         /* grid-template-columns: 1fr 1fr; */
-        gap: 1rem;
+        gap: 2rem;
     }
 }

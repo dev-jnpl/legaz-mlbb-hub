@@ -262,7 +262,7 @@
     scale: 1.1;
 }
 
-.highlights-video video {
+.highlights-video iframe {
     width: 100%;
     max-height: 100%;
     object-fit: cover;

@@ -161,8 +161,8 @@
 .game-info {
   display: grid;
   background-color: #042a3d;
-  min-height: 75vh;
-  padding: 0 4%;
+  height: auto;
+  padding: 3rem;
 }
 
 .game-info-content {
@@ -182,6 +182,7 @@
   color: #ffffff;
   line-height: 1.2;
   letter-spacing: 0.5px;
+  padding-bottom: 2rem;
 }
 
 .game-text {
@@ -276,9 +277,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-self: center;
   align-items: center;
   min-height: 80%;
-  width: 100%;
+  width: 70%;
   color: white;
   text-align: center;
 }
@@ -617,6 +619,10 @@
 
   .stats-content-span2 {
     grid-column: span 2;
+  }
+
+  .expertise-content {
+    width: 100%;
   }
 
   .expertise-title {
