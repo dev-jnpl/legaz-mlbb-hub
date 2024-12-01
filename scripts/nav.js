@@ -113,3 +113,19 @@ jQuery(function ($) {
   $(window).trigger('scroll');
 
 });
+
+// Show the modal
+function showModal() {
+  document.querySelector('.overlay').style.display = 'block';
+  document.querySelector('.rating-modal').style.display = 'block';
+}
+
+// Hide the modal and handle rating
+function submitRating(rating) {
+  alert(`Thank you for your rating of ${rating}!`);
+  document.querySelector('.overlay').style.display = 'none';
+  document.querySelector('.rating-modal').style.display = 'none';
+}
+
+// Trigger the modal when the page loads
+window.onload = showModal;
